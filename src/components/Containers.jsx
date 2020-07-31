@@ -17,6 +17,14 @@ export const SecContainer = styled.div`
   background: #fff;
 `;
 
+export const FooterContainer = styled.div`
+  /* width: ${(props) => props.width || 92}%; */
+  width:720px;
+  margin: 0 auto;  
+  position: relative;
+  padding: 75px 3.5vw 36px 3.5vw;
+  background: #eef0ef;
+`;
 // export const MainContainer = styled(LayoutContainer)`
 //   margin-top: 230px;
 //   @media (max-width: 768px) {
