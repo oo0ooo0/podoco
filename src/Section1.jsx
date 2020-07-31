@@ -7,10 +7,12 @@ import styled from 'styled-components';
 // const HeaderImg3 = require('../public/img/menu.png');
 // const HeaderImg4 = require('../public/img/zoom.png');
 
-const StyledHeader = styled.header`
+const StyledSection1 = styled.section`
   margin: 0 auto;
-  padding: 30px;
+  padding: 100px 30px;
   display: flex;
+  flex-direction: column;
+
   justify-content: space-between;
   align-items: center;
   h1 {
@@ -41,24 +43,19 @@ const StyledHeader = styled.header`
   }
 `;
 
-function Header() {
+function Section1() {
   return (
-    <StyledHeader>
-      <h1>
-        <img src='./img/logo.png' alt='PODO_REVIEW' />
-      </h1>
+    <StyledSection1>
+      <img src='./img/logo-v.png' alt='PODO_REVIEW' />
+      <h2>
+        빅데이터 기반 리뷰 전문 미디어 
+      </h2>
 
-      <nav>
-        <ul>
-          <li>홈</li>
-          <li>제품리뷰</li>
-          <li>서비스 이용약관</li>
-          <li>
-            <img src='./img/zoom.png' alt='PODO_REVIEW' />
-          </li>
-        </ul>
-      </nav>
-    </StyledHeader>
+      <p>
+      포도리뷰에서는 현재 <em>293</em>개의 제품에 대한 <br/>
+      <em>384,719,481</em>개의 의견이 분석되고 있습니다      </p>
+
+    </StyledSection1>
   );
 }
-export default Header;
+export default Section1;
