@@ -55,7 +55,9 @@ a:hover {
 
 
 /* font reset */
-body {font-family:'Exo 2','Nanum Gothic', 'sans-serif';}
+body {
+  background: #eef0ef;
+  font-family:'Exo 2','Nanum Gothic', 'sans-serif';}
 
 
 
