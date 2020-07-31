@@ -4,8 +4,10 @@ import styled from 'styled-components';
 const StyledSection2 = styled.section`
   width: 720px;
   margin: 0 auto;
-  padding: 75px 0 0 3.5vw;
-  /* background: rgba(0, 0, 0, 0.1); */
+  padding: 75px 3.5vw 36px 3.5vw;
+  background: #fff;
+  /* box-shadow: 0px 0px 2px 0px; */
+
   div {
     text-align: center;
     h2 {
@@ -21,6 +23,7 @@ const StyledSection2 = styled.section`
     padding-top: 54px;
     width: 60vw;
     max-width: 600px;
+    /* border: 1px solid red; */
   }
   .wrap {
     display: flex;
@@ -30,12 +33,12 @@ const StyledSection2 = styled.section`
       text-align: left;
       h3 {
         padding-top: 15px;
-        font: 400 2.5vw/1 AppleGothic;
-        color: #8804cb;
+        font: 800 36px/1 AppleGothic;
+        color: #8207c1;
       }
       h4 {
         padding-top: 35px;
-        font: 800 3vw/1.2 Nanum Gothic;
+        font: 800 27px/1.2 Nanum Gothic;
       }
       p {
         margin-top: 13px;
@@ -44,16 +47,29 @@ const StyledSection2 = styled.section`
       }
     }
     .graphWrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 85px;
-      height: 85px;
-      border: 8px solid #00b953;
-      border-radius: 100%;
-      background: rgba(0, 0, 0, 0.1);
-      span {
-        font: italic 400 24px/1 Exo2;
+      .pie-chart2 {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: conic-gradient(#00b953 75% 0%, #dde2df 0% 75%);
+        border-radius: 50%;
+      }
+      .pie-chart2 .center {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background: #fff;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        span {
+          font: italic 700 22px/1 Nanum Gothic;
+          color: #00b953;
+        }
       }
     }
   }
@@ -69,7 +85,7 @@ function Section2() {
   return (
     <StyledSection2>
       <div>
-        <h2>Best Product</h2>
+        <h2>BEST PRODUCT</h2>
       </div>
       <FlexBox>
         <img src='./img/best-product.png' alt='PODO_REVIEW' />
@@ -83,7 +99,11 @@ function Section2() {
             <p>쿠거</p>
           </div>
           <div className='graphWrap'>
-            <span>75%</span>
+            <div className='pie-chart2'>
+              <span className='center'>
+                <span>75%</span>
+              </span>
+            </div>
           </div>
         </div>
       </FlexBox>
