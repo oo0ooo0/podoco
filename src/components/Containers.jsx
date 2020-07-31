@@ -8,7 +8,7 @@ export const Sec1Container = styled.div`
   background: no-repeat url('./img/section1-bg.png');
 
 `;
-export const SecContainer = styled.div`
+export const Sec2Container = styled.div`
   /* width: ${(props) => props.width || 92}%; */
   width:720px;
   margin: 0 auto;  
@@ -17,12 +17,21 @@ export const SecContainer = styled.div`
   background: #fff;
 `;
 
+export const Sec3Container = styled.div`
+  /* width: ${(props) => props.width || 92}%; */
+  section{display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+  margin: 0 auto;
+  margin-top: 18px;
+  background: #fff;}
+`;
+
 export const FooterContainer = styled.div`
   /* width: ${(props) => props.width || 92}%; */
   width:720px;
   margin: 0 auto;  
   position: relative;
-  padding: 75px 3.5vw 36px 3.5vw;
   background: #eef0ef;
 `;
 // export const MainContainer = styled(LayoutContainer)`

@@ -1,16 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Sec3Container } from './components/Containers';
 
 const StyledSection3 = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  width: 720px;
-  margin: 0 auto;
-  margin-top: 18px;
-  background: #fff;
-  /* > div.item {
-    margin-left: -2px;
-  } */
   > div.item {
     width: 50%;
     display: flex;
@@ -80,6 +72,7 @@ const StyledSection3 = styled.section`
       }
     }
   }
+
   div.readMore {
     cursor: pointer;
     width: 100%;
@@ -103,156 +96,158 @@ const StyledSection3 = styled.section`
 
 function Section3() {
   return (
-    <StyledSection3>
-      <div className='item'>
-        <div className='imgWrap'>
-          <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
-        </div>
-        <div className='infoWrap'>
-          <div className='textWrap'>
-            <h3>스마트폰</h3>
-            <h4>
-              플레오맥스
-              <br />
-              PBE-S40
-            </h4>
-            <p>SONY</p>
+    <Sec3Container>
+      <StyledSection3>
+        <div className='item'>
+          <div className='imgWrap'>
+            <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
           </div>
-          <div className='graphWrap'>
-            <div className='pie-chart2'>
-              <span className='center'>
-                <span>58%</span>
-              </span>
+          <div className='infoWrap'>
+            <div className='textWrap'>
+              <h3>스마트폰</h3>
+              <h4>
+                플레오맥스
+                <br />
+                PBE-S40
+              </h4>
+              <p>SONY</p>
+            </div>
+            <div className='graphWrap'>
+              <div className='pie-chart2'>
+                <span className='center'>
+                  <span>58%</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className='item'>
-        <div className='imgWrap'>
-          <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
-        </div>
-        <div className='infoWrap'>
-          <div className='textWrap'>
-            <h3>스마트폰</h3>
-            <h4>
-              플레오맥스
-              <br />
-              PBE-S40
-            </h4>
-            <p>SONY</p>
+        <div className='item'>
+          <div className='imgWrap'>
+            <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
           </div>
-          <div className='graphWrap'>
-            <div className='pie-chart2'>
-              <span className='center'>
-                <span>58%</span>
-              </span>
+          <div className='infoWrap'>
+            <div className='textWrap'>
+              <h3>스마트폰</h3>
+              <h4>
+                플레오맥스
+                <br />
+                PBE-S40
+              </h4>
+              <p>SONY</p>
+            </div>
+            <div className='graphWrap'>
+              <div className='pie-chart2'>
+                <span className='center'>
+                  <span>58%</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className='item'>
-        <div className='imgWrap'>
-          <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
-        </div>
-        <div className='infoWrap'>
-          <div className='textWrap'>
-            <h3>스마트폰</h3>
-            <h4>
-              플레오맥스
-              <br />
-              PBE-S40
-            </h4>
-            <p>SONY</p>
+        <div className='item'>
+          <div className='imgWrap'>
+            <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
           </div>
-          <div className='graphWrap'>
-            <div className='pie-chart2'>
-              <span className='center'>
-                <span>58%</span>
-              </span>
+          <div className='infoWrap'>
+            <div className='textWrap'>
+              <h3>스마트폰</h3>
+              <h4>
+                플레오맥스
+                <br />
+                PBE-S40
+              </h4>
+              <p>SONY</p>
+            </div>
+            <div className='graphWrap'>
+              <div className='pie-chart2'>
+                <span className='center'>
+                  <span>58%</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className='item'>
-        <div className='imgWrap'>
-          <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
-        </div>
-        <div className='infoWrap'>
-          <div className='textWrap'>
-            <h3>스마트폰</h3>
-            <h4>
-              플레오맥스
-              <br />
-              PBE-S40
-            </h4>
-            <p>SONY</p>
+        <div className='item'>
+          <div className='imgWrap'>
+            <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
           </div>
-          <div className='graphWrap'>
-            <div className='pie-chart2'>
-              <span className='center'>
-                <span>58%</span>
-              </span>
+          <div className='infoWrap'>
+            <div className='textWrap'>
+              <h3>스마트폰</h3>
+              <h4>
+                플레오맥스
+                <br />
+                PBE-S40
+              </h4>
+              <p>SONY</p>
+            </div>
+            <div className='graphWrap'>
+              <div className='pie-chart2'>
+                <span className='center'>
+                  <span>58%</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className='item'>
-        <div className='imgWrap'>
-          <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
-        </div>
-        <div className='infoWrap'>
-          <div className='textWrap'>
-            <h3>스마트폰</h3>
-            <h4>
-              플레오맥스
-              <br />
-              PBE-S40
-            </h4>
-            <p>SONY</p>
+        <div className='item'>
+          <div className='imgWrap'>
+            <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
           </div>
-          <div className='graphWrap'>
-            <div className='pie-chart2'>
-              <span className='center'>
-                <span>58%</span>
-              </span>
+          <div className='infoWrap'>
+            <div className='textWrap'>
+              <h3>스마트폰</h3>
+              <h4>
+                플레오맥스
+                <br />
+                PBE-S40
+              </h4>
+              <p>SONY</p>
+            </div>
+            <div className='graphWrap'>
+              <div className='pie-chart2'>
+                <span className='center'>
+                  <span>58%</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className='item'>
-        <div className='imgWrap'>
-          <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
-        </div>
-        <div className='infoWrap'>
-          <div className='textWrap'>
-            <h3>스마트폰</h3>
-            <h4>
-              플레오맥스
-              <br />
-              PBE-S40
-            </h4>
-            <p>SONY</p>
+        <div className='item'>
+          <div className='imgWrap'>
+            <img src='./img/sec3-1.png' alt='PODO_REVIEW' />
           </div>
-          <div className='graphWrap'>
-            <div className='pie-chart2'>
-              <span className='center'>
-                <span>58%</span>
-              </span>
+          <div className='infoWrap'>
+            <div className='textWrap'>
+              <h3>스마트폰</h3>
+              <h4>
+                플레오맥스
+                <br />
+                PBE-S40
+              </h4>
+              <p>SONY</p>
+            </div>
+            <div className='graphWrap'>
+              <div className='pie-chart2'>
+                <span className='center'>
+                  <span>58%</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className='readMore'>
-        <img src='./img/arrow-down.svg' alt='arrow-down' />
-        <span>READ MORE</span>
-      </div>
-    </StyledSection3>
+        <div className='readMore'>
+          <img src='./img/arrow-down.svg' alt='arrow-down' />
+          <span>READ MORE</span>
+        </div>
+      </StyledSection3>
+    </Sec3Container>
   );
 }
 export default Section3;

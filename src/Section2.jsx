@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SecContainer } from './components/Containers';
+import { Sec2Container } from './components/Containers';
 
 const StyledSection2 = styled.section`
   :after {
@@ -88,7 +88,7 @@ const FlexBox = styled.div`
 
 function Section2() {
   return (
-    <SecContainer>
+    <Sec2Container>
       <StyledSection2>
         <div>
           <h2>BEST PRODUCT</h2>
@@ -115,7 +115,7 @@ function Section2() {
         </FlexBox>
         <div id='box' className='box-shadow'></div>
       </StyledSection2>
-    </SecContainer>
+    </Sec2Container>
   );
 }
 export default Section2;
