@@ -7,7 +7,11 @@ div,
 ul,
 li,
 dl,
+<<<<<<< HEAD
 dt,    
+=======
+dt,
+>>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
 ol,
 h1,
 h2,
@@ -52,6 +56,7 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
 /* title reset  */
 h1 {
   font: normal 900 48px/48px 'Lato';
@@ -85,6 +90,55 @@ body {
   font: normal 400 12px/1.5 'Lato';
 }
 
+=======
+
+
+/* font reset */
+body {font-family:'Exo2','Nanum Gothic', 'sans-serif';}
+
+
+
+/* title reset  */
+h1 {
+/*메인 탑 타이틀 */
+  font: normal 700 48px/1 'Nanum Gothic';
+  color: #000000;
+  opacity: 80%;
+}
+
+h2 {
+  /*상품 상세 페이지 타이틀 */
+  font: normal 700 36px/1 'Exo2';
+  color: #29252C ;
+  opacity: 90%;
+}
+
+h3 {
+  /*상품 상세 페이지 탭 타이틀 */
+  font: normal 800 32px/1 'Nanum Gothic';
+  color: #29252C ;
+}
+
+h4 {
+  /*상품 타이틀 */
+  font: normal 800 30px/1 'Exo2';
+  color: #29252C ;
+  opacity: 90%;
+}
+
+span {
+  font: normal 400 24px/1 'Exo2';
+  color: #29252C;
+}
+
+p,li {
+  font: normal 400 26px/1 'Exo2';
+  color: #29252C;
+}
+
+
+
+>>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
  /* container */
 .container{
 padding: 50px 0px;
@@ -123,7 +177,10 @@ button {
   a {
 button.btn {
         margin-top: 30px;
+<<<<<<< HEAD
        
+=======
+>>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
           padding: 2px 5px;
           font-size: 15px;
           border: 1px solid lightgray;
@@ -198,6 +255,7 @@ button.btn {
   margin-top: 50px !important;
 }
 
+<<<<<<< HEAD
 /* clearfix */
 .clearfix,
 .clearfix::after,
@@ -206,6 +264,9 @@ button.btn {
   clear: both;
   display: block;
 }
+=======
+
+>>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
 `;
 
 export default GlobalStyle;
