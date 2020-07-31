@@ -7,11 +7,7 @@ div,
 ul,
 li,
 dl,
-<<<<<<< HEAD
-dt,    
-=======
 dt,
->>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
 ol,
 h1,
 h2,
@@ -56,45 +52,10 @@ a:hover {
 }
 
 
-<<<<<<< HEAD
-/* title reset  */
-h1 {
-  font: normal 900 48px/48px 'Lato';
-  color: #1d1e21;
-}
-
-h2 {
-  font: normal 900 32px/48px 'Lato';
-  color: #1d1e21;
-  border-bottom: 1px solid lightGray;
-
-}
-
-h3 {
-  font: normal 500 14px/42px 'Lato';
-  color: #1d1e21;
-}
-
-h4 {
-  font: normal 900 24px/34px 'Lato';
-  color: #1d1e21;
-}
-
-p {
-  font: normal 400 15px/22px 'Lato';
-  color: #1d1e21;
-}
-
-/* font reset */
-body {
-  font: normal 400 12px/1.5 'Lato';
-}
-
-=======
 
 
 /* font reset */
-body {font-family:'Exo2','Nanum Gothic', 'sans-serif';}
+body {font-family:'Exo 2','Nanum Gothic', 'sans-serif';}
 
 
 
@@ -108,7 +69,7 @@ h1 {
 
 h2 {
   /*상품 상세 페이지 타이틀 */
-  font: normal 700 36px/1 'Exo2';
+  font: normal 700 36px/1 'Exo 2';
   color: #29252C ;
   opacity: 90%;
 }
@@ -121,24 +82,28 @@ h3 {
 
 h4 {
   /*상품 타이틀 */
-  font: normal 800 30px/1 'Exo2';
+  font: normal 800 30px/1 'Exo 2';
   color: #29252C ;
   opacity: 90%;
 }
 
 span {
-  font: normal 400 24px/1 'Exo2';
+  font: normal 400 24px/1 'Exo 2';
   color: #29252C;
 }
 
 p,li {
-  font: normal 400 26px/1 'Exo2';
+  font: normal 400 26px/1 'Exo 2';
   color: #29252C;
 }
 
+em{
+  font-style: normal;
+  color:#8804cb;
+
+}
 
 
->>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
  /* container */
 .container{
 padding: 50px 0px;
@@ -177,10 +142,7 @@ button {
   a {
 button.btn {
         margin-top: 30px;
-<<<<<<< HEAD
        
-=======
->>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
           padding: 2px 5px;
           font-size: 15px;
           border: 1px solid lightgray;
@@ -255,18 +217,6 @@ button.btn {
   margin-top: 50px !important;
 }
 
-<<<<<<< HEAD
-/* clearfix */
-.clearfix,
-.clearfix::after,
-.clearfix::before {
-  content: '';
-  clear: both;
-  display: block;
-}
-=======
-
->>>>>>> b21ac9be1e43de007c29ace6e9f59fd46b9c8450
 `;
 
 export default GlobalStyle;
