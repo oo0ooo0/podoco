@@ -80,6 +80,25 @@ const StyledSection3 = styled.section`
       }
     }
   }
+  div.readMore {
+    cursor: pointer;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-top: 3px;
+      height: 13px;
+      margin-right: 20px;
+    }
+    span {
+      white-space: nowrap;
+      font: normal regular 20px/1 Nanum Gothic;
+      color: #68656b;
+    }
+  }
 `;
 
 function Section3() {
@@ -227,6 +246,11 @@ function Section3() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className='readMore'>
+        <img src='./img/arrow-down.svg' alt='arrow-down' />
+        <span>READ MORE</span>
       </div>
     </StyledSection3>
   );
