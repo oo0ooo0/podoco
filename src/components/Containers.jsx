@@ -8,6 +8,14 @@ export const Sec1Container = styled.div`
   background: no-repeat url('./img/section1-bg.png');
 
 `;
+export const SecContainer = styled.div`
+  /* width: ${(props) => props.width || 92}%; */
+  width:720px;
+  margin: 0 auto;  
+  position: relative;
+  padding: 75px 3.5vw 36px 3.5vw;
+  background: #fff;
+`;
 
 // export const MainContainer = styled(LayoutContainer)`
 //   margin-top: 230px;
