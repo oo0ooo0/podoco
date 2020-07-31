@@ -17,6 +17,7 @@ const StyledHeaderM = styled.header`
   h1 {
     display: hidden;
     img {
+      cursor: pointer;
       width: 100%;
       background: rgba(0, 0, 0, 0.1);
     }
@@ -27,6 +28,7 @@ const StyledHeaderM = styled.header`
     justify-content: space-between;
     height: 40px;
     img {
+      cursor: pointer;
       height: 100%;
     }
   }
