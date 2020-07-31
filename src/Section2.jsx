@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SecContainer } from './components/Containers';
 
 const StyledSection2 = styled.section`
-  width: 720px;
-  margin: 0 auto;
-  padding: 75px 3.5vw 36px 3.5vw;
-  background: #fff;
-  /* box-shadow: 0px 0px 2px 0px; */
-
+  :after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: 1px;
+    z-index: -1;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 5px 2px #aaa;
+  }
   div {
     text-align: center;
     h2 {
@@ -83,31 +88,34 @@ const FlexBox = styled.div`
 
 function Section2() {
   return (
-    <StyledSection2>
-      <div>
-        <h2>BEST PRODUCT</h2>
-      </div>
-      <FlexBox>
-        <img src='./img/best-product.png' alt='PODO_REVIEW' />
-        <div className='wrap'>
-          <div className='textWrap'>
-            <h3>이어폰 </h3>
-            <h4>
-              쿠거 COUGAR 200K Rainbow <br />
-              USB Red color
-            </h4>
-            <p>쿠거</p>
-          </div>
-          <div className='graphWrap'>
-            <div className='pie-chart2'>
-              <span className='center'>
-                <span>75%</span>
-              </span>
+    <SecContainer>
+      <StyledSection2>
+        <div>
+          <h2>BEST PRODUCT</h2>
+        </div>
+        <FlexBox>
+          <img src='./img/best-product.png' alt='PODO_REVIEW' />
+          <div className='wrap'>
+            <div className='textWrap'>
+              <h3>이어폰 </h3>
+              <h4>
+                쿠거 COUGAR 200K Rainbow <br />
+                USB Red color
+              </h4>
+              <p>쿠거</p>
+            </div>
+            <div className='graphWrap'>
+              <div className='pie-chart2'>
+                <span className='center'>
+                  <span>75%</span>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </FlexBox>
-    </StyledSection2>
+        </FlexBox>
+        <div id='box' className='box-shadow'></div>
+      </StyledSection2>
+    </SecContainer>
   );
 }
 export default Section2;
