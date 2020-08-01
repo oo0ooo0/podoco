@@ -31,14 +31,16 @@ const StyledSection1 = styled.section`
 
   @media (max-width: 700px) {
     margin-top: 4.5vw;
+    height: 90vh;
     img {
     }
     h2 {
-      margin-top: 7vw;
+      margin-top: 6vw;
+      font-size: 6vw;
     }
     p {
       margin: 3.5vw 0 7.8vw 0;
-      font: normal regular 2.6vw/1 Nanum Gothic;
+      font-size: 4vw;
     }
   }
 `;

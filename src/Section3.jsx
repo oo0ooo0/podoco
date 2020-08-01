@@ -194,14 +194,13 @@ const StyledSection3 = styled.section`
 
     div.readMore {
       height: 9.6vw;
-
       img {
         margin-top: 0.3vw;
-        height: 1.3vw;
+        height: 2vw;
         margin-right: 2vw;
       }
-      span {
-        font: normal regular 2vw/1 Nanum Gothic;
+      > span {
+        font-size: 4vw;
       }
     }
   }

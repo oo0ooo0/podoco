@@ -11,7 +11,7 @@ const StyledHeaderM = styled.header`
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 35px 35px 0 35px;
+  padding: 30px 30px 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,10 +27,20 @@ const StyledHeaderM = styled.header`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: 30px;
     img {
       cursor: pointer;
       height: 100%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 3vw 3vw 0 3vw;
+    h1 {
+      display: hidden;
+    }
+    nav {
+      height: 6vw;
     }
   }
 `;
