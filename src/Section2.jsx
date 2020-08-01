@@ -98,45 +98,25 @@ const StyledSection2 = styled.section`
         h4 {
           padding-top: 2vw;
           font-size: 5vw;
-<<<<<<< HEAD
-        } 
-=======
         }
->>>>>>> 24248f035e72f546c97970dd7e21f02353899116
         p {
           margin-top: 1.3vw;
           font-size: 4vw;
         }
-<<<<<<< HEAD
       }
-        .graphWrap {
-          margin: 0 3vw;
-          .pie-chart2 {
-            width: 16vw;
-            height: 16vw;
-          }
-          .pie-chart2 .center {
-            width: 13vw;
-            height: 13vw;
-            top: 1.5vw;
-            left: 1.5vw;
-=======
-
-        .graphWrap {
-          margin: 0 3vw;
-          .pie-chart2 {
-            width: 12vw;
-            height: 12vw;
-          }
-          .pie-chart2 .center {
-            width: 10vw;
-            height: 10vw;
-            top: 1vw;
-            left: 1vw;
->>>>>>> 24248f035e72f546c97970dd7e21f02353899116
-            span {
-              font: italic 700 3vw/1 Nanum Gothic;
-            }
+      .graphWrap {
+        margin: 0 3vw;
+        .pie-chart2 {
+          width: 16vw;
+          height: 16vw;
+        }
+        .pie-chart2 .center {
+          width: 13vw;
+          height: 13vw;
+          top: 1.5vw;
+          left: 1.5vw;
+          span {
+            font: italic 700 3vw/1 Nanum Gothic;
           }
         }
       }
