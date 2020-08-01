@@ -30,7 +30,7 @@ const StyledSection1 = styled.section`
   }
 
   @media (max-width: 700px) {
-    margin-top: 4.5vw;
+    margin-top: 7vw;
     /* height: 90vh; */
     img {
     }
