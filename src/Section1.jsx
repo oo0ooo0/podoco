@@ -10,7 +10,7 @@ import { Sec1Container } from './components/Containers';
 // const HeaderImg4 = require('../public/img/zoom.png');
 
 const StyledSection1 = styled.section`
-  width: 720px;
+  max-width: 1024px;
   margin: 0 auto;
   margin-top: 45px;
   display: flex;

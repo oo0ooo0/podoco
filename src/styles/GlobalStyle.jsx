@@ -57,7 +57,11 @@ a:hover {
 /* font reset */
 body {
   background: #eef0ef;
-  font-family:'Exo 2','Nanum Gothic', 'sans-serif';}
+  font-family:'Exo 2','Nanum Gothic', 'sans-serif';
+  letter-spacing: -0.1px;
+  word-spacing: -0.5px;
+}
+  
 
 
 
@@ -94,7 +98,11 @@ span {
   color: #29252C;
 }
 
-p,li {
+p {
+  font: normal 400 26px/1 'Exo 2';
+  color: #29252C;
+}
+li {
   font: normal 400 26px/1 'Exo 2';
   color: #29252C;
 }
