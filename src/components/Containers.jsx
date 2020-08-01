@@ -17,7 +17,6 @@ export const Sec2Container = styled.div`
 export const Sec3Container = styled.div`
   margin: 0 auto;
   margin-top: 18px;
-
   width: 100%;
   position: relative;
   background: #fff;

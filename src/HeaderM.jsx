@@ -9,6 +9,7 @@ import styled from 'styled-components';
 
 const StyledHeaderM = styled.header`
   width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 35px 35px 0 35px;
   display: flex;

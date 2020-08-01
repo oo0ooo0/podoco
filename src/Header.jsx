@@ -8,14 +8,14 @@ import styled from 'styled-components';
 // const HeaderImg4 = require('../public/img/zoom.png');
 
 const StyledHeader = styled.header`
+  width: 100%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   h1 {
     width: 200px;
-    background: rgba(0, 0, 0, 0.1);
     img {
       width: 100%;
       background: rgba(0, 0, 0, 0.1);
@@ -25,15 +25,15 @@ const StyledHeader = styled.header`
     ul {
       display: flex;
       li {
-        font: normal 400 18px/1 'Nanum Gothic';
-
-        margin: 0 20px;
+        /* font: normal 400 18px/1 'Nanum Gothic'; */
+        /* margin: 0 20px; */
+        height: 30px;
+        width: 50px;
+        padding: 0;
         background: rgba(0, 0, 0, 0.1);
-        vertical-align: middle;
-
         img {
           margin: 0 auto;
-          width: 50%;
+          width: 100%;
           background: rgba(0, 0, 0, 0.1);
         }
       }
@@ -54,7 +54,7 @@ function Header() {
           <li>제품리뷰</li>
           <li>서비스 이용약관</li>
           <li>
-            <img src='./img/zoom.png' alt='PODO_REVIEW' />
+            <img src='./img/zoom.svg' alt='PODO_REVIEW' />
           </li>
         </ul>
       </nav>
