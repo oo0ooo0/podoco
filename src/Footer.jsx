@@ -8,11 +8,13 @@ const StyledFooter = styled.footer`
   align-items: center;
   div.iconWrap {
     margin-top: 85px;
-    img {
+    a img {
       margin-right: 40px;
     }
-    img:last-child {
-      margin-right: 0px;
+    a:last-child {
+      img {
+        margin-right: 0px;
+      }
     }
   }
   div.infoWrap {
@@ -44,12 +46,18 @@ function Footer() {
     <FooterContainer>
       <StyledFooter>
         <div className='iconWrap'>
-          <img src='./img/footer-icon-1.png' alt='facebook' />
-          <img src='./img/footer-icon-2.png' alt='instagram' />
-          <img src='./img/footer-icon-3.png' alt='naver-blog' />
+          <a href='#'>
+            <img src='./img/footer-icon-1.png' alt='facebook' />
+          </a>
+          <a href='#'>
+            <img src='./img/footer-icon-2.png' alt='instagram' />
+          </a>
+          <a href='#'>
+            <img src='./img/footer-icon-3.png' alt='naver-blog' />
+          </a>
         </div>
         <div className='infoWrap'>
-          <a>서비스약관</a> <div>|</div> <a>개인정보취급방침</a>
+          <a href='#'>서비스약관</a> <div>|</div> <a href='#'>개인정보취급방침</a>
         </div>
         <p>© PODOREVIEW.COM</p>
       </StyledFooter>
