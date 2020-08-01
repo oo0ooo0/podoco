@@ -40,7 +40,7 @@ const StyledHeaderM = styled.header`
       display: hidden;
     }
     nav {
-      height: 6vw;
+      height: 8vw;
     }
   }
 `;
