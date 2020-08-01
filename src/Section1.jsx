@@ -28,6 +28,19 @@ const StyledSection1 = styled.section`
     color: #363139;
     opacity: 70%;
   }
+
+  @media (max-width: 700px) {
+    margin-top: 4.5vw;
+    img {
+    }
+    h2 {
+      margin-top: 7vw;
+    }
+    p {
+      margin: 3.5vw 0 7.8vw 0;
+      font: normal regular 2.6vw/1 Nanum Gothic;
+    }
+  }
 `;
 
 function Section1() {
