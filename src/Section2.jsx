@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { Sec2Container } from './components/Containers';
 
 const StyledSection2 = styled.section`
+  width: 100%;
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
   :after {
     content: '';
     position: absolute;
@@ -34,6 +38,7 @@ const StyledSection2 = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .textWrap {
       text-align: left;
       h3 {
@@ -46,12 +51,13 @@ const StyledSection2 = styled.section`
         font: 800 27px/1.2 Nanum Gothic;
       }
       p {
-        margin-top: 13px;
-        font: 600 2.4vw/1.2 Nanum Gothic;
+        margin: 13px 0 38px 0;
+        font: 600 24px/1.2 Nanum Gothic;
         color: #9c9a9e;
       }
     }
     .graphWrap {
+      margin: 0 27px;
       .pie-chart2 {
         display: inline-block;
         position: relative;
@@ -74,6 +80,67 @@ const StyledSection2 = styled.section`
         span {
           font: italic 700 22px/1 Nanum Gothic;
           color: #00b953;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 720px) {
+    div {
+      text-align: center;
+      h2 {
+      }
+    }
+    img {
+      padding-top: 54px;
+      width: 30vw;
+      max-width: 300px;
+      /* border: 1px solid red; */
+    }
+    .wrap {
+      margin: 0 auto;
+      width: 60%;
+      .textWrap {
+        h3 {
+          padding-top: 15px;
+          font: 800 30px/1 AppleGothic;
+          color: #8207c1;
+        }
+        h4 {
+          padding-top: 25px;
+          font: 800 20px/1.2 Nanum Gothic;
+        }
+        p {
+          margin-top: 13px;
+          font: 600 20px/1.2 Nanum Gothic;
+          color: #9c9a9e;
+        }
+      }
+      .graphWrap {
+        margin: 0 27px;
+        .pie-chart2 {
+          display: inline-block;
+          position: relative;
+          width: 100px;
+          height: 100px;
+          background: conic-gradient(#00b953 75% 0%, #dde2df 0% 75%);
+          border-radius: 50%;
+        }
+        .pie-chart2 .center {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 80px;
+          background: #fff;
+          border-radius: 50%;
+          top: 10px;
+          left: 10px;
+          span {
+            font: italic 700 22px/1 Nanum Gothic;
+            color: #00b953;
+          }
         }
       }
     }
