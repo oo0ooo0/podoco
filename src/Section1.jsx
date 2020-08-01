@@ -31,16 +31,16 @@ const StyledSection1 = styled.section`
 
   @media (max-width: 700px) {
     margin-top: 4.5vw;
-    height: 90vh;
+    /* height: 90vh; */
     img {
     }
     h2 {
-      margin-top: 6vw;
-      font-size: 6vw;
+      margin-top: 8vw;
+      font-size: 7.5vw;
     }
     p {
-      margin: 3.5vw 0 7.8vw 0;
-      font-size: 4vw;
+      margin: 4vw 0 8vw 0;
+      font-size: 5vw;
     }
   }
 `;

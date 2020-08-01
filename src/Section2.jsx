@@ -10,7 +10,7 @@ const StyledSection2 = styled.section`
   :after {
     content: '';
     position: absolute;
-    right: 0;
+    right: 0; 
     width: 100%;
     bottom: 1px;
     z-index: -1;
