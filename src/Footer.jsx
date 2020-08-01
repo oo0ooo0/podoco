@@ -39,6 +39,29 @@ const StyledFooter = styled.footer`
     font: normal 700 20px/1 Exo 2;
     color: #ccd2cf;
   }
+
+  @media (max-width: 700px) {
+    div.iconWrap {
+      margin-top: 8.5vw;
+      a img {
+        margin-right: 4vw;
+        width: 7vw;
+        height: 7vw;
+      }
+    }
+    div.infoWrap {
+      margin-top: 4.8vw;
+      > * {
+        margin-right: 1.8vw;
+        font: normal 400 3vw/1 Nanum Gothic;
+      }
+    }
+    p {
+      margin: 3.7vw 0 4.8vw 0;
+      text-align: center;
+      font-size: 3vw;
+    }
+  }
 `;
 
 function Footer() {
