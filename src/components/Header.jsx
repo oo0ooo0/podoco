@@ -6,7 +6,7 @@ import Search from './Search';
 const StyledHeader = styled.header`
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
     }
   }
   nav {
-    width: 150px;
+    width: 320px;
     height: 20px;
     margin: 0 auto;
     margin: 0 30px;
@@ -27,7 +27,7 @@ const StyledHeader = styled.header`
       justify-content: space-between;
       li {
         position: relative;
-
+        /* 위치 */
         a,
         button {
           color: #363139;
@@ -38,18 +38,23 @@ const StyledHeader = styled.header`
         button {
           margin-top: 6.6px;
         }
-        img.zoom {
-          margin: 0 auto;
-          height: 90%;
-          margin-top: 3px;
-        }
+
+        /* 제품리뷰 화살표 */
         img.arrowDown {
           margin: 0 auto;
           height: 8px;
           margin: 4px 0px 2px 10px;
         }
+
+        /* zoom */
         div {
           width: 100%;
+          button {
+            img {
+              height: 100%;
+              width: 20px;
+            }
+          }
         }
       }
     }
@@ -94,6 +99,9 @@ class Header extends Component {
                 <img className='arrowDown' src='./img/arrow-header.svg' alt='arrow-down' />
               </button>
               {this.state.modal && <ListModal onClose={this.handleCloseModal} />}
+            </li>
+            <li>
+              <a href='/#'>서비스 이용약관</a>
             </li>
             <li>
               <Search />

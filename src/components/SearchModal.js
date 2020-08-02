@@ -57,6 +57,62 @@ const StyledModal = styled.div`
       }
     }
   }
+  @media (min-width: 750px) {
+    .MyModal {
+      background: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .content {
+        max-width: 720px;
+
+        padding-left: 37px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        height: auto;
+
+        div.searchWrap {
+          position: relative;
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin-bottom: 2.5vw;
+          div.imgWrap {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 17px;
+            right: 23px;
+            height: 50px;
+            width: 50px;
+            background: #8207c1;
+
+            img {
+              height: 20px;
+              cursor: pointer;
+            }
+          }
+        }
+        div.textWrap {
+          margin-top: 13px;
+          p {
+            margin-bottom: 20px;
+            font: normal 600 20px/1 Nanum Gothic;
+          }
+        }
+      }
+    }
+  }
+
   @media (max-width: 720px) {
     .MyModal {
       .content {

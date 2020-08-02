@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const StyledModal = styled.div`
   .Modal {
     position: relative;
-    /* border-top: 2px solid rgba(0, 0, 0, 0.2); */
     left: 0;
     top: 0px;
     height: 100%;
@@ -31,8 +30,7 @@ const StyledModal = styled.div`
         z-index: 1;
         img {
           height: 100%;
-          height: 1.8vw;
-          /* border: 1px solid red; */
+          width: 10px;
         }
       }
 

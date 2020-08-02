@@ -3,16 +3,7 @@ import SearchModal from './SearchModal';
 import ModalPortal from '../ModalPortal';
 import styled from 'styled-components';
 
-const StyleSearch = styled.header`
-  button {
-    /* background: #000;
-    width: 110px;
-    height: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
-`;
+const StyleSearch = styled.div``;
 
 class Search extends Component {
   state = {
