@@ -69,18 +69,18 @@ function Footer() {
     <FooterContainer>
       <StyledFooter>
         <div className='iconWrap'>
-          <a href='#'>
+          <a href='/#'>
             <img src='./img/footer-icon-1.png' alt='facebook' />
           </a>
-          <a href='#'>
+          <a href='/#'>
             <img src='./img/footer-icon-2.png' alt='instagram' />
           </a>
-          <a href='#'>
+          <a href='/#'>
             <img src='./img/footer-icon-3.png' alt='naver-blog' />
           </a>
         </div>
         <div className='infoWrap'>
-          <a href='#'>서비스약관</a> <div>|</div> <a href='#'>개인정보취급방침</a>
+          <a href='/#'>서비스약관</a> <div>|</div> <a href='/#'>개인정보취급방침</a>
         </div>
         <p>© PODOREVIEW.COM</p>
       </StyledFooter>
