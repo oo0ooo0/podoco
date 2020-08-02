@@ -55,6 +55,9 @@ const StyledModal = styled.div`
               font: normal 600 4.2vw/1 Nanum Gothic;
               color: #363139;
             }
+            h3:hover {
+              color: #8207c1;
+            }
             img {
               position: absolute;
               bottom: 0;

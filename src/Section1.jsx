@@ -34,7 +34,7 @@ const StyledSection1 = styled.section`
     }
     p {
       margin: 4vw 0 10vw 0;
-      font-size: 4.5vw;
+      font-size: 4.55vw;
     }
   }
 `;

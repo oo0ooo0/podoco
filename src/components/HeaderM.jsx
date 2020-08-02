@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import MyModal from './MobileMenu';
+import Search from './Search';
 import ModalPortal from '../ModalPortal';
 
 const StyledHeaderM = styled.header`
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 3vw 4vw 0 4vw;
+  padding: 28px 30px 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +17,6 @@ const StyledHeaderM = styled.header`
     img {
       cursor: pointer;
       width: 100%;
-      background: rgba(0, 0, 0, 0.1);
     }
   }
   nav {
@@ -34,6 +34,8 @@ const StyledHeaderM = styled.header`
   }
 
   @media (max-width: 500px) {
+    padding: 4vw 3vw 0 4vw;
+
     h1 {
       display: hidden;
     }
@@ -76,7 +78,7 @@ class HeaderM extends Component {
               <MyModal onClose={this.handleCloseModal} />
             </ModalPortal>
           )}
-          <img src='./img/zoom.svg' alt='PODO_REVIEW' />
+          <Search />
         </nav>
       </StyledHeaderM>
     );
