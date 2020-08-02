@@ -75,12 +75,45 @@ const StyledSection2 = styled.section`
       }
     }
   }
-
-  @media (max-width: 720px) {
+  @media (min-width: 720px) {
+    div {
+    text-align: center;
+    h2 {
+      margin: 0 auto;
+      display: inline-block;
+      padding-bottom: 20px;
+      border-bottom: 5px solid black;
+      color: #8804cb;
+    }
+  }
+  img {
+    margin: 0 auto;
+    padding-top: 54px;
+    width: 40vw;
+    max-width: 390px;
+    /* border: 1px solid red; */
+  }
+  .wrap {
+    width: 80%;
+    margin: 0 auto;
+    .textWrap {
+      text-align: left;
+      h3 {
+        font: 800 30px/1 AppleGothic;
+      }
+      h4 {
+        font: 800 27px/1.2 Nanum Gothic;
+      }
+      p {
+        font: 600 24px/1.2 Nanum Gothic;
+      }
+    }
+  }
+  @media (max-width: 700px) {
     div {
       h2 {
         padding-bottom: 1vw;
-        font-size: 5vw;
+        font-size: 8vw;
       }
     }
     img {

@@ -10,7 +10,7 @@ export const Sec2Container = styled.div`
   margin: 0 auto;
   width: 100%;
   position: relative;
-  padding: 75px 3.5vw 36px 3.5vw;
+  padding: 7.5vw 3.5vw 3.6vw 3.5vw;
   background: #fff;
 `;
 
