@@ -29,9 +29,3 @@ export const FooterContainer = styled.div`
   position: relative;
   background: #eef0ef;
 `;
-// export const MainContainer = styled(LayoutContainer)`
-//   margin-top: 230px;
-//   @media (max-width: 768px) {
-//     margin-top: 230px;
-//   }
-// `;

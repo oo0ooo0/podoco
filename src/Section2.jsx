@@ -23,7 +23,6 @@ const StyledSection2 = styled.section`
     padding-top: 54px;
     width: 60vw;
     max-width: 600px;
-    /* border: 1px solid red; */
   }
   .wrap {
     display: flex;
@@ -91,7 +90,6 @@ const StyledSection2 = styled.section`
       padding-top: 54px;
       width: 40vw;
       max-width: 390px;
-      /* border: 1px solid red; */
     }
     .wrap {
       width: 80%;
@@ -110,48 +108,45 @@ const StyledSection2 = styled.section`
       }
     }
   }
-    @media (max-width: 500px) {
-      div {
-        h2 {
-          padding-bottom: 1vw;
-          font-size: 8vw;
+  @media (max-width: 500px) {
+    div {
+      h2 {
+        padding-bottom: 1vw;
+        font-size: 8vw;
+      }
+    }
+    img {
+      padding-top: 6vw;
+      width: 60vw;
+    }
+    .wrap {
+      .textWrap {
+        h3 {
+          padding-top: 1.5vw;
+          font-size: 4vw;
+        }
+        h4 {
+          padding-top: 1vw;
+          font-size: 5vw;
+        }
+        p {
+          margin-top: 1.3vw;
+          font-size: 4vw;
         }
       }
-      img {
-        padding-top: 6vw;
-        width: 60vw;
-        /* max-width: 60vw; */
-        /* border: 1px solid red; */
-      }
-      .wrap {
-        .textWrap {
-          h3 {
-            padding-top: 1.5vw;
-            font-size: 4vw;
-          }
-          h4 {
-            padding-top: 1vw;
-            font-size: 5vw;
-          }
-          p {
-            margin-top: 1.3vw;
-            font-size: 4vw;
-          }
+      .graphWrap {
+        margin: 0 3vw;
+        .pie-chart2 {
+          width: 16vw;
+          height: 16vw;
         }
-        .graphWrap {
-          margin: 0 3vw;
-          .pie-chart2 {
-            width: 16vw;
-            height: 16vw;
-          }
-          .pie-chart2 .center {
-            width: 13vw;
-            height: 13vw;
-            top: 1.5vw;
-            left: 1.5vw;
-            span {
-              font: italic 700 3vw/1 Nanum Gothic;
-            }
+        .pie-chart2 .center {
+          width: 13vw;
+          height: 13vw;
+          top: 1.5vw;
+          left: 1.5vw;
+          span {
+            font: italic 700 3vw/1 Nanum Gothic;
           }
         }
       }

@@ -142,7 +142,6 @@ const StyledSection3 = styled.section`
   @media (max-width: 700px) {
     > div.item {
       width: 50%;
-      /* min-width: 328px; */
 
       div.imgWrap {
         margin-top: 3vw;
