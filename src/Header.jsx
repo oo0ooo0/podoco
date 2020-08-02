@@ -15,29 +15,43 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   h1 {
-    width: 200px;
+    width: 120px;
     img {
       width: 100%;
-      background: rgba(0, 0, 0, 0.1);
     }
   }
   nav {
+    width: 200px;
+    height: 20px;
+    margin: 0 auto;
+    margin: 0 30px;
     ul {
       display: flex;
-      li {
+      width: 100%;
+      justify-content: space-between;
+      li a {
         /* font: normal 400 18px/1 'Nanum Gothic'; */
         /* margin: 0 20px; */
-        height: 30px;
-        width: 50px;
-        padding: 0;
-        background: rgba(0, 0, 0, 0.1);
-        img {
+        /* padding-right: 50px; */
+        color: #363139;
+        opacity: 70%;
+        font-size: 18px;
+        white-space: nowrap;
+        img.zoom {
           margin: 0 auto;
-          width: 100%;
-          background: rgba(0, 0, 0, 0.1);
+          height: 100%;
+          margin-bottom: -5px;
+        }
+        img.arrowDown {
+          margin: 0 auto;
+          height: 8px;
+          margin: 4px 0px 2px 6px;
         }
       }
     }
+  }
+  @media (max-width: 720px) {
+    display: none;
   }
 `;
 
@@ -45,16 +59,28 @@ function Header() {
   return (
     <StyledHeader>
       <h1>
-        <img src='./img/logo.png' alt='PODO_REVIEW' />
+        <a href='/#'>
+          <img src='./img/logo.png' alt='PODO_REVIEW' />
+        </a>
       </h1>
 
       <nav>
         <ul>
-          <li>홈</li>
-          <li>제품리뷰</li>
-          <li>서비스 이용약관</li>
           <li>
-            <img src='./img/zoom.svg' alt='PODO_REVIEW' />
+            <a href='/#'>홈</a>
+          </li>
+
+          <li>
+            <a href='/#'>
+              제품리뷰
+              <img className='arrowDown' src='./img/arrow-header.svg' alt='arrow-down' />
+            </a>
+          </li>
+
+          <li>
+            <a href='/#'>
+              <img className='zoom' src='./img/zoom.svg' alt='PODO_REVIEW' />
+            </a>
           </li>
         </ul>
       </nav>

@@ -2,6 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import HeaderM from './HeaderM';
+import Header from './Header';
 import { Sec1Container } from './components/Containers';
 
 // const Logo = require('../public/img/logo.png');
@@ -49,6 +50,7 @@ function Section1() {
   return (
     <Sec1Container>
       <HeaderM />
+      <Header />
       <StyledSection1>
         <img src='./img/logo-v.png' alt='PODO_REVIEW' />
         <h2>빅데이터 기반 리뷰 전문 미디어</h2>

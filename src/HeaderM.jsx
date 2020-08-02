@@ -33,14 +33,17 @@ const StyledHeaderM = styled.header`
       height: 100%;
     }
   }
+  @media (min-width: 721px) {
+    display: none;
+  }
 
-  @media (max-width: 700px) {
+  @media (max-width: 500px) {
     padding: 3vw 3vw 0 3vw;
     h1 {
       display: hidden;
     }
     nav {
-      height: 9vw;
+      height: 7vw;
     }
   }
 `;
