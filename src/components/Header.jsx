@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ListModal from './ListModal';
+import Search from './Search';
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -93,6 +94,9 @@ class Header extends Component {
                 <img className='arrowDown' src='./img/arrow-header.svg' alt='arrow-down' />
               </button>
               {this.state.modal && <ListModal onClose={this.handleCloseModal} />}
+            </li>
+            <li>
+              <Search />
             </li>
           </ul>
         </nav>

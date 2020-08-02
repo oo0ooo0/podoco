@@ -14,28 +14,15 @@ const StyledModal = styled.div`
     align-items: center;
     justify-content: center;
     .content {
+      max-width: 720px;
+
       padding-left: 37px;
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
       background: #fff;
       width: 100%;
-      height: 100vh;
-      > button {
-        position: absolute;
-        top: 0px;
-        left: 0;
-        height: 7.2vw;
-        z-index: 1;
-        > img {
-          margin: 0 0 -2px 3.8vw;
-          height: 100%;
-          font-size: 2.5vw;
-          height: 7.2vw;
-          border: 1px solid red;
-        }
-      }
-      /* close btn */
+      height: auto;
 
       div.searchWrap {
         position: relative;
@@ -55,7 +42,7 @@ const StyledModal = styled.div`
           background: #8207c1;
 
           img {
-            height: 7vw;
+            height: 50px;
             cursor: pointer;
           }
         }
@@ -70,7 +57,30 @@ const StyledModal = styled.div`
       }
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 720px) {
+    .MyModal {
+      .content {
+        div.searchWrap {
+          margin-bottom: 4.5vw;
+          div.imgWrap {
+            height: 15vw;
+            width: 15vw;
+
+            img {
+              height: 7vw;
+              cursor: pointer;
+            }
+          }
+        }
+        div.textWrap {
+          margin-top: 3vw;
+          p {
+            margin-bottom: 7.2vw;
+            font-size: 5vw;
+          }
+        }
+      }
+    }
   }
 `;
 const SearchModal = ({ onClose }) => {

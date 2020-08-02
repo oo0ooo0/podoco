@@ -14,6 +14,19 @@ const StyledInput = styled.form`
       color: #363139;
     }
   }
+  @media (max-width: 720px) {
+    input {
+      padding: 3.5vw 0;
+      width: 73vw;
+      border: 0px solid black;
+      border-bottom: 2px solid black;
+      height: 15vw;
+
+      &::placeholder {
+        font-size: 5vw;
+      }
+    }
+  }
 `;
 
 class Input extends Component {
