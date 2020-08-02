@@ -1,11 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-// const Logo = require('../public/img/logo.png');
-// const HeaderImg2 = require('../public/img/logo-img.png');
-// const HeaderImg3 = require('../public/img/menu.png');
-// const HeaderImg4 = require('../public/img/zoom.png');
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -30,9 +24,6 @@ const StyledHeader = styled.header`
       width: 100%;
       justify-content: space-between;
       li a {
-        /* font: normal 400 18px/1 'Nanum Gothic'; */
-        /* margin: 0 20px; */
-        /* padding-right: 50px; */
         color: #363139;
         opacity: 70%;
         font-size: 18px;

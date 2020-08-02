@@ -1,14 +1,8 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import HeaderM from './HeaderM';
-import Header from './Header';
+import HeaderM from './components//HeaderM';
+import Header from './components/Header';
 import { Sec1Container } from './components/Containers';
-
-// const Logo = require('../public/img/logo.png');
-// const HeaderImg2 = require('../public/img/logo-img.png');
-// const HeaderImg3 = require('../public/img/menu.png');
-// const HeaderImg4 = require('../public/img/zoom.png');
 
 const StyledSection1 = styled.section`
   max-width: 1024px;
@@ -32,7 +26,6 @@ const StyledSection1 = styled.section`
 
   @media (max-width: 700px) {
     margin-top: 10vw;
-    /* height: 90vh; */
     img {
     }
     h2 {
