@@ -16,13 +16,13 @@ const StyledModal = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       padding: 1rem;
-      width: 80%;
-      height: 90vh;
+      width: 100%;
+      height: 100vh;
       .titleWrap {
         position: relative;
-        border-bottom: 1px solid lightGray;
+        border-bottom: 2px solid #e9e8e9;
         padding-bottom: 3.6vw;
         margin-bottom: 3vw;
         button {
@@ -32,13 +32,16 @@ const StyledModal = styled.div`
           height: 3.6vw;
           z-index: 1;
           img {
+            margin: 0 0 -2px 3.8vw;
             height: 100%;
             font-size: 2.5vw;
-            line-hight: 3.6vw;
+            height: 3.6vw;
+            /* border: 1px solid red; */
           }
         }
         h2 {
           text-align: center;
+          font-size: 3.5vw;
         }
       }
       ul {
@@ -49,11 +52,13 @@ const StyledModal = styled.div`
           a {
             h3 {
               text-align: center;
-              font-size: 4vw;
+              font: normal 600 3.2vw/1 Nanum Gothic;
+              color: #363139;
             }
             img {
               position: absolute;
               bottom: 0;
+              left: 3.7vw;
               height: 4vw;
             }
           }
@@ -69,7 +74,7 @@ const MyModal = ({ onClose }) => {
         <div className='content'>
           <div className='titleWrap'>
             <button onClick={onClose}>
-              <img src='./img/menu.svg' alt='PODO_REVIEW' />
+              <img src='./img/X@1.25x.svg' alt='PODO_REVIEW' />
             </button>
             <h2>HOME</h2>
           </div>
@@ -82,42 +87,42 @@ const MyModal = ({ onClose }) => {
 
             <li>
               <a href='/#'>
-                <img src='./img/menu.svg' alt='PODO_REVIEW' />
+                <img src='./img/modal_1.svg' alt='PODO_REVIEW' />
                 <h3>스마트폰</h3>
               </a>
             </li>
 
             <li>
               <a href='/#'>
-                <img src='./img/menu.svg' alt='PODO_REVIEW' />
+                <img src='./img/modal_2.svg' alt='PODO_REVIEW' />
                 <h3>태블릿/노트북</h3>
               </a>
             </li>
 
             <li>
               <a href='/#'>
-                <img src='./img/menu.svg' alt='PODO_REVIEW' />
+                <img src='./img/modal_3.svg' alt='PODO_REVIEW' />
                 <h3>카메라</h3>
               </a>
             </li>
 
             <li>
               <a href='/#'>
-                <img src='./img/menu.svg' alt='PODO_REVIEW' />
+                <img src='./img/modal_4.svg' alt='PODO_REVIEW' />
                 <h3>오디오</h3>
               </a>
             </li>
 
             <li>
               <a href='/#'>
-                <img src='./img/menu.svg' alt='PODO_REVIEW' />
+                <img src='./img/modal_5.svg' alt='PODO_REVIEW' />
                 <h3>가전</h3>
               </a>
             </li>
 
             <li>
               <a href='/#'>
-                <img src='./img/menu.svg' alt='PODO_REVIEW' />
+                <img src='./img/modal_6.svg' alt='PODO_REVIEW' />
                 <h3>IT액세서리</h3>
               </a>
             </li>
