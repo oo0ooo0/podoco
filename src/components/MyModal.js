@@ -66,6 +66,70 @@ const StyledModal = styled.div`
       }
     }
   }
+  @media (max-width: 700px) {
+    .MyModal {
+      background: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+        .titleWrap {
+          position: relative;
+          border-bottom: 2px solid #e9e8e9;
+          padding-bottom: 3.6vw;
+          margin-bottom: 3vw;
+          button {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            height: 7.2vw;
+            z-index: 1;
+            img {
+              margin: 0 0 -2px 3.8vw;
+              height: 100%;
+              font-size: 2.5vw;
+              height: 7.2vw;
+              /* border: 1px solid red; */
+            }
+          }
+          h2 {
+            text-align: center;
+            font-size: 7vw;
+          }
+        }
+        ul {
+          li {
+            height: 7vw;
+            position: relative;
+            margin-top: 7.4vw;
+            a {
+              h3 {
+                text-align: center;
+                font: normal 600 7vw/1 Nanum Gothic;
+                color: #363139;
+              }
+              img {
+                left: 3.7vw;
+                height: 7vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 `;
 const MyModal = ({ onClose }) => {
   return (
