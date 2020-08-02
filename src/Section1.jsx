@@ -13,7 +13,7 @@ import { Sec1Container } from './components/Containers';
 const StyledSection1 = styled.section`
   max-width: 1024px;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,16 +31,16 @@ const StyledSection1 = styled.section`
   }
 
   @media (max-width: 700px) {
-    margin-top: 7vw;
+    margin-top: 10vw;
     /* height: 90vh; */
     img {
     }
     h2 {
-      margin-top: 8vw;
+      margin-top: 10vw;
       font-size: 7.5vw;
     }
     p {
-      margin: 4vw 0 8vw 0;
+      margin: 4vw 0 10vw 0;
       font-size: 5vw;
     }
   }

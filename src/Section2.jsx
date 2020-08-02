@@ -127,15 +127,15 @@ const StyledSection2 = styled.section`
         .textWrap {
           h3 {
             padding-top: 1.5vw;
-            font-size: 3.5vw;
+            font-size: 4vw;
           }
           h4 {
             padding-top: 1vw;
-            font-size: 4vw;
+            font-size: 5vw;
           }
           p {
             margin-top: 1.3vw;
-            font-size: 3.5vw;
+            font-size: 4vw;
           }
         }
         .graphWrap {

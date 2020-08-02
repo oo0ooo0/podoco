@@ -43,7 +43,7 @@ const StyledHeaderM = styled.header`
       display: hidden;
     }
     nav {
-      height: 7vw;
+      height: 8vw;
     }
   }
 `;
