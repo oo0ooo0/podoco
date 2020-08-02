@@ -3,18 +3,20 @@ import styled from 'styled-components';
 
 const StyledInput = styled.form`
   input {
-    padding: 35px 0;
+    padding-top: 27px;
     width: 537px;
     border: 0px solid black;
     border-bottom: 2px solid black;
     border-radius: 0;
-    height: 110px;
-    font: normal 600 35px/1 Nanum Gothic;
+    height: 67px;
+    font: normal 600 20px/1 Nanum Gothic;
     color: #363139;
-
+    &:active {
+      border: 0px solid red;
+    }
     &::placeholder,
     text {
-      font: normal 600 35px/1 Nanum Gothic;
+      font: normal 600 20px/1 Nanum Gothic;
       color: #363139;
     }
   }
@@ -53,4 +55,4 @@ class Input extends Component {
   }
 }
 
-export default Input;
+export default React.memo(Input);
