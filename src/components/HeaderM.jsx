@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import MyModal from './MyModal';
+import MyModal from './MobileMenu';
 import ModalPortal from '../ModalPortal';
 
 const StyledHeaderM = styled.header`
@@ -26,7 +26,7 @@ const StyledHeaderM = styled.header`
     height: 30px;
     img {
       cursor: pointer;
-      height: 100%;
+      height: 7vw;
     }
   }
   @media (min-width: 721px) {
@@ -34,12 +34,14 @@ const StyledHeaderM = styled.header`
   }
 
   @media (max-width: 500px) {
-    padding: 3vw 3vw 0 3vw;
     h1 {
       display: hidden;
     }
     nav {
-      height: 8vw;
+      margin: 3vw 4vw 0 4vw;
+      img {
+        height: 8vw;
+      }
     }
   }
 `;
