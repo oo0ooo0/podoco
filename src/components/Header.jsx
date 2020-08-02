@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
+import ListModal from './ListModal';
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -15,7 +16,7 @@ const StyledHeader = styled.header`
     }
   }
   nav {
-    width: 200px;
+    width: 150px;
     height: 20px;
     margin: 0 auto;
     margin: 0 30px;
@@ -23,20 +24,31 @@ const StyledHeader = styled.header`
       display: flex;
       width: 100%;
       justify-content: space-between;
-      li a {
-        color: #363139;
-        opacity: 70%;
-        font-size: 18px;
-        white-space: nowrap;
+      li {
+        position: relative;
+
+        a,
+        button {
+          color: #363139;
+          opacity: 70%;
+          font-size: 18px;
+          white-space: nowrap;
+        }
+        button {
+          margin-top: 6.6px;
+        }
         img.zoom {
           margin: 0 auto;
-          height: 100%;
-          margin-bottom: -5px;
+          height: 90%;
+          margin-top: 3px;
         }
         img.arrowDown {
           margin: 0 auto;
           height: 8px;
-          margin: 4px 0px 2px 6px;
+          margin: 4px 0px 2px 10px;
+        }
+        div {
+          width: 100%;
         }
       }
     }
@@ -46,36 +58,46 @@ const StyledHeader = styled.header`
   }
 `;
 
-function Header() {
-  return (
-    <StyledHeader>
-      <h1>
-        <a href='/#'>
-          <img src='./img/logo.png' alt='PODO_REVIEW' />
-        </a>
-      </h1>
+class Header extends Component {
+  state = {
+    modal: false,
+  };
+  handleOpenModal = () => {
+    this.setState({
+      modal: true,
+    });
+  };
+  handleCloseModal = () => {
+    this.setState({
+      modal: false,
+    });
+  };
+  render() {
+    return (
+      <StyledHeader>
+        <h1>
+          <a href='/#'>
+            <img src='./img/logo.png' alt='PODO_REVIEW' />
+          </a>
+        </h1>
 
-      <nav>
-        <ul>
-          <li>
-            <a href='/#'>홈</a>
-          </li>
+        <nav>
+          <ul>
+            <li>
+              <a href='/#'>홈</a>
+            </li>
 
-          <li>
-            <a href='/#'>
-              제품리뷰
-              <img className='arrowDown' src='./img/arrow-header.svg' alt='arrow-down' />
-            </a>
-          </li>
-
-          <li>
-            <a href='/#'>
-              <img className='zoom' src='./img/zoom.svg' alt='PODO_REVIEW' />
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </StyledHeader>
-  );
+            <li>
+              <button onClick={this.handleOpenModal}>
+                제품리뷰
+                <img className='arrowDown' src='./img/arrow-header.svg' alt='arrow-down' />
+              </button>
+              {this.state.modal && <ListModal onClose={this.handleCloseModal} />}
+            </li>
+          </ul>
+        </nav>
+      </StyledHeader>
+    );
+  }
 }
 export default Header;
