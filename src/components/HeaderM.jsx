@@ -7,7 +7,7 @@ const StyledHeaderM = styled.header`
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 30px 30px 0 30px;
+  padding: 3vw 4vw 0 4vw;
   display: flex;
   justify-content: space-between;
   align-items: center;

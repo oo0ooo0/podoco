@@ -52,21 +52,21 @@ const StyledModal = styled.div`
           a {
             h3 {
               text-align: center;
-              font: normal 600 3.2vw/1 Nanum Gothic;
+              font: normal 600 4.2vw/1 Nanum Gothic;
               color: #363139;
             }
             img {
               position: absolute;
               bottom: 0;
               left: 3.7vw;
-              height: 4vw;
+              height: 5vw;
             }
           }
         }
       }
     }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 500px) {
     .MyModal {
       background: rgba(0, 0, 0, 0.5);
       position: fixed;

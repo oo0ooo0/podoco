@@ -30,11 +30,11 @@ const StyledSection1 = styled.section`
     }
     h2 {
       margin-top: 10vw;
-      font-size: 7.5vw;
+      font-size: 6vw;
     }
     p {
       margin: 4vw 0 10vw 0;
-      font-size: 5vw;
+      font-size: 4.5vw;
     }
   }
 `;
