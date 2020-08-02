@@ -2,6 +2,52 @@ import React from 'react';
 import styled from 'styled-components';
 import { Sec3Container } from './components/Containers';
 
+const StyledPiChart = styled.div`
+  margin: 0 27px;
+      .pie-chart2 {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: conic-gradient(${(props) => (props.red ? '#fa3f25' : '#00b953')} 75% 0%, #dde2df 0% 75%);
+        border-radius: 50%;
+      }
+      .pie-chart2 .center {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background: #fff;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        span {
+          font: italic 700 22px/1 Nanum Gothic;
+          color: ${(props) => (props.red ? '#fa3f25' : '#00b953')};
+        }
+      }
+    }
+
+  @media (max-width: 700px) {
+    margin: 0 3vw;
+    .pie-chart2 {
+      width: 12vw;
+      height: 12vw;
+    }
+    .pie-chart2 .center {
+      width: 10vw;
+      height: 10vw;
+      top: 1vw;
+      left: 1vw;
+      span {
+        font: italic 700 3vw/1 Nanum Gothic;
+      }
+    }
+  }
+`;
+
 const StyledSection3 = styled.section`
   display: flex;
   flex-wrap: wrap;
@@ -64,33 +110,6 @@ const StyledSection3 = styled.section`
           margin: 24px 0 40px 35px;
           font: normal 700 20px/1 Exo 2;
           color: #b6b5b8;
-        }
-      }
-    }
-    .graphWrap {
-      margin: 0 27px;
-      .pie-chart2 {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        background: conic-gradient(#00b953 75% 0%, #dde2df 0% 75%);
-        border-radius: 50%;
-      }
-      .pie-chart2 .center {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-        background: #fff;
-        border-radius: 50%;
-        top: 10px;
-        left: 10px;
-        span {
-          font: italic 700 22px/1 Nanum Gothic;
-          color: #00b953;
         }
       }
     }
@@ -173,33 +192,17 @@ const StyledSection3 = styled.section`
           }
         }
       }
-      .graphWrap {
-        margin: 0 3vw;
-        .pie-chart2 {
-          width: 12vw;
-          height: 12vw;
-        }
-        .pie-chart2 .center {
-          width: 10vw;
-          height: 10vw;
-          top: 1vw;
-          left: 1vw;
-          span {
-            font: italic 700 3vw/1 Nanum Gothic;
-          }
-        }
-      }
-    }
 
-    div.readMore {
-      height: 9.6vw;
-      img {
-        margin-top: 0.3vw;
-        height: 2vw;
-        margin-right: 2vw;
-      }
-      > span {
-        font-size: 4vw;
+      div.readMore {
+        height: 9.6vw;
+        img {
+          margin-top: 0.3vw;
+          height: 2vw;
+          margin-right: 2vw;
+        }
+        > span {
+          font-size: 4vw;
+        }
       }
     }
   }
@@ -221,13 +224,13 @@ function Section3() {
               </h4>
               <p>SONY</p>
             </div>
-            <div className='graphWrap'>
+            <StyledPiChart red>
               <div className='pie-chart2'>
                 <span className='center'>
                   <span>58%</span>
                 </span>
               </div>
-            </div>
+            </StyledPiChart>
           </div>
         </div>
 
@@ -241,13 +244,13 @@ function Section3() {
               <h4>Acer Chrom</h4>
               <p>SONY</p>
             </div>
-            <div className='graphWrap'>
+            <StyledPiChart>
               <div className='pie-chart2'>
                 <span className='center'>
                   <span>64%</span>
                 </span>
               </div>
-            </div>
+            </StyledPiChart>
           </div>
         </div>
 
@@ -263,13 +266,13 @@ function Section3() {
               </h4>
               <p>SONY</p>
             </div>
-            <div className='graphWrap'>
+            <StyledPiChart>
               <div className='pie-chart2'>
                 <span className='center'>
                   <span>51%</span>
                 </span>
               </div>
-            </div>
+            </StyledPiChart>
           </div>
         </div>
 
@@ -287,13 +290,13 @@ function Section3() {
               </h4>
               <p>SONY</p>
             </div>
-            <div className='graphWrap'>
+            <StyledPiChart>
               <div className='pie-chart2'>
                 <span className='center'>
                   <span>75%</span>
                 </span>
               </div>
-            </div>
+            </StyledPiChart>
           </div>
         </div>
 
@@ -310,13 +313,13 @@ function Section3() {
               </h4>
               <p>SONY</p>
             </div>
-            <div className='graphWrap'>
+            <StyledPiChart red>
               <div className='pie-chart2'>
                 <span className='center'>
                   <span>80%</span>
                 </span>
               </div>
-            </div>
+            </StyledPiChart>
           </div>
         </div>
 
@@ -332,13 +335,13 @@ function Section3() {
               </h4>
               <p>SONY</p>
             </div>
-            <div className='graphWrap'>
+            <StyledPiChart>
               <div className='pie-chart2'>
                 <span className='center'>
                   <span>58%</span>
                 </span>
               </div>
-            </div>
+            </StyledPiChart>
           </div>
         </div>
 
