@@ -9,8 +9,11 @@ const StyledInput = styled.form`
     border-bottom: 2px solid black;
     border-radius: 0;
     height: 110px;
+    font: normal 600 35px/1 Nanum Gothic;
+    color: #363139;
 
-    &::placeholder {
+    &::placeholder,
+    text {
       font: normal 600 35px/1 Nanum Gothic;
       color: #363139;
     }
@@ -22,6 +25,7 @@ const StyledInput = styled.form`
       border: 0px solid black;
       border-bottom: 2px solid black;
       height: 15vw;
+      font-size: 5vw;
 
       &::placeholder {
         font-size: 5vw;
@@ -43,7 +47,7 @@ class Input extends Component {
     return (
       <StyledInput>
         <input placeholder='젠하이저' value={this.state.name} onChange={this.handleChange} />
-        <div>{this.state.name}</div>
+        {/* <div>{this.state.name}</div> */}
       </StyledInput>
     );
   }
