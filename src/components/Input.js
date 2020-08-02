@@ -7,6 +7,7 @@ const StyledInput = styled.form`
     width: 537px;
     border: 0px solid black;
     border-bottom: 2px solid black;
+    border-radius: 0;
     height: 110px;
 
     &::placeholder {
