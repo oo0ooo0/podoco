@@ -23,7 +23,7 @@ class Search extends Component {
     return (
       <StyleSearch>
         <button onClick={this.handleOpenModal}>
-          <img src='./img/zoom.svg' alt='PODO_REVIEW' />
+          <img src='./img/zoom.svg' alt='Search' />
         </button>
         {this.state.modal && (
           <ModalPortal>
