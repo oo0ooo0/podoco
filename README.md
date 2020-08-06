@@ -1,6 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 2020-08This project was bootstrapd with [Create React App] (https://github.com/facebook/create-react-app).
+
 ## 2020-08
+
+### this work is task for checking work ability. 
+
+I used [styled-components] (https://github.com/styled-components/styled-components).
+I haven't used any other library.
+
+If you use a library,
+Graph information using [react-minimal-pie-chart] (https://github.com/toomuchdesign/react-minimal-pie-chart#readme),
+We plan to create each product information (item) component using [react-masonry-css] (https://github.com/paulcollett/react-masonry-css#readme).
+
+[vercel] (https://vercel.com/) Pushing using a domain automatically deploys it.
+
+### Final work can be found at https://podoco.vercel.app/.
 
 ### Publishing task (업무 가능여부 파악을 위한 과제)
 
