@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## 2020-08
 
-### Publishing task
+### Publishing task (업무 가능여부 파악을 위한 과제)
 
 [styled-components](https://github.com/styled-components/styled-components)를 사용하였습니다.
 그 외 라이브러리를 사용하지 않고 구현해 보았습니다.
