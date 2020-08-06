@@ -17,6 +17,8 @@ We plan to create each product information (item) component using [react-masonry
 
 ### Final work can be found at https://podoco.vercel.app/.
 
+
+..
 ### Publishing task (업무 가능여부 파악을 위한 과제)
 
 [styled-components](https://github.com/styled-components/styled-components)를 사용하였습니다.
